@@ -1,6 +1,16 @@
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+// Did this code successfully run on Leetcode: Yes
+// Any problem you faced while coding this: No
+// Approach:
+// We iterate through the array and store each number and its index in a hashmap.
+// For each number, we check if (target - current number) exists in the map.
+// If it does, we found the two indices whose values sum to the target and return them.
+
+
+
 import java.util.Arrays;
 import java.util.HashMap;
-
 class Problem1{
     public int [] twoSum(int[] nums, int target){
         HashMap<Integer, Integer> hmap = new HashMap<>();
